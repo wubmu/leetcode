@@ -14,9 +14,9 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 
 
-// ¹þÏ£Ó³Éä
-// Ê±¼ä¸´ÔÓ¶È: O(n)
-// ¿Õ¼ä¸´ÔÓ¶È: O(n)
+// ï¿½ï¿½Ï£Ó³ï¿½ï¿½
+// Ê±ï¿½ä¸´ï¿½Ó¶ï¿½: O(n)
+// ï¿½Õ¼ä¸´ï¿½Ó¶ï¿½: O(n)
 using namespace std;
 
 
@@ -52,5 +52,6 @@ int main() {
     int target = 10;
     print_vec(Solution().twoSum(nums, target));
 
-    return 0;
+    //return 0;
+    system("pause");
 }
