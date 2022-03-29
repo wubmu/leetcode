@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\md-note"
+		},
+		{
+			"name": "leetcode",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

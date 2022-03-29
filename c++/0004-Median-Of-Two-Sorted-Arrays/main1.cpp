@@ -1,23 +1,23 @@
 /**
 
-Èç¹ûÊ±¼ä¸´ÔÓ¶Èlog£¨m+n£© Í¨³£¶¼ÐèÒª¶þ·Ö²éÕÒ
+ï¿½ï¿½ï¿½Ê±ï¿½ä¸´ï¿½Ó¶ï¿½logï¿½ï¿½m+nï¿½ï¿½ Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
 
 
 Input: nums1 = [1,2], nums2 = [3,4]
 Output: 2.50000
 Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 
-µÈ¼ÛÓÚÕÛ°ëÉ¾³ý²éÕÒµÚK´óµÄÊý
-c: a,bºÏ²¢ºóµÄÓÐÐòÊý×é
-1£© a[k/2 - 1] = b[k/2 - 1] , return a[k/2 - 1] or b[k/2 - 1]
-2)  a[k/2 -1] > b[k/2 - 1] , ËµÃ÷ b[0, k/2 -1] ·¶Î§ÄÚµÄÔªËØÒ»¶¨±Èc[k/2 -1]Ð¡£¬ ¿ÉÒÔ²»¿¼ÂÇb[0,k/2 - 1]
-3)  a[k/2 -1] < b[k/2 -1] £¬ºÍ£¨2£©Ïà·´
+ï¿½È¼ï¿½ï¿½ï¿½ï¿½Û°ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½Kï¿½ï¿½ï¿½ï¿½ï¿½
+c: a,bï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+1ï¿½ï¿½ a[k/2 - 1] = b[k/2 - 1] , return a[k/2 - 1] or b[k/2 - 1]
+2)  a[k/2 -1] > b[k/2 - 1] , Ëµï¿½ï¿½ b[0, k/2 -1] ï¿½ï¿½Î§ï¿½Úµï¿½Ôªï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½c[k/2 -1]Ð¡ï¿½ï¿½ ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½b[0,k/2 - 1]
+3)  a[k/2 -1] < b[k/2 -1] ï¿½ï¿½ï¿½Í£ï¿½2ï¿½ï¿½ï¿½à·´
 
-µÝ¹é½áÊøÌõ¼þ£º
+ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 1) a[k/2 - 1] == b[k/2 - 1] return a[k/2 -1]
-2) a»òbÎª¿ÕÊ±, b[k/2 -1]»òa[k/2-1]
-3) k==1Ê±£¬return min(a[0], b[0])
+2) aï¿½ï¿½bÎªï¿½ï¿½Ê±, b[k/2 -1]ï¿½ï¿½a[k/2-1]
+3) k==1Ê±ï¿½ï¿½return min(a[0], b[0])
 
 **/
 #include <iostream>
@@ -33,7 +33,7 @@ public:
         int n = nums1.size(), m = nums2.size(), k=0;
         k = (n + m + 1) / 2;
         if( (n+m ) % 2 == 1 ){
-            // ÆæÊý
+            // ï¿½ï¿½ï¿½ï¿½
             return getK(nums1,0, n -1, nums2, 0 , m -1 , k);
         }
 
@@ -43,7 +43,7 @@ public:
     int getK(const vector<int>& nums1,int start1, int end1, vector<int>& nums2,int start2, int end2, int k){
         //printf("%d%d%d%d\n",start1,end1,start2,end2);
         int m = nums1.size(), n = nums1.size();
-        // ÌØÊâÇé¿öÆäÖÐÒ»¸öÎª¿Õ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Îªï¿½ï¿½
         if(start1 > end1)
             return nums2[start2 + k - 1];
         if(start2 > end2)
@@ -52,7 +52,7 @@ public:
             return min(nums1[start1], nums2[start2]);
 
         int len1 = end1 - start1 + 1, len2 = end2 - start2 + 1;
-        // ¼«¶ËÇé¿ö·ÀÖ¹Ò»°ëÔ½½ç
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹Ò»ï¿½ï¿½Ô½ï¿½ï¿½
 
        // printf("start %d\n %d ",start1, min(k/2, len1));
         //printf("%d\n",start2);
@@ -103,20 +103,20 @@ int main() {
     cout << Solution().findMedianSortedArrays(nums11, nums12) << endl;
     // 2
 
-    vector<int> nums21 = {1, 2};
-    vector<int> nums22 = {3, 4};
-    cout << Solution().findMedianSortedArrays(nums21, nums22) << endl;
-    // 2.5
+    // vector<int> nums21 = {1, 2};
+    // vector<int> nums22 = {3, 4};
+    // cout << Solution().findMedianSortedArrays(nums21, nums22) << endl;
+    // // 2.5
 
 
-    vector<int> nums31 = {};
-    vector<int> nums32 = {1};
-    cout << Solution().findMedianSortedArrays(nums31, nums32) << endl;
-    // 1
+    // vector<int> nums31 = {};
+    // vector<int> nums32 = {1};
+    // cout << Solution().findMedianSortedArrays(nums31, nums32) << endl;
+    // // 1
 
-    vector<int> nums41 = {1, 2, 2};
-    vector<int> nums42 = {1, 2, 3};
-    cout << Solution().findMedianSortedArrays(nums41, nums42) << endl;
+    // vector<int> nums41 = {1, 2, 2};
+    // vector<int> nums42 = {1, 2, 3};
+    // cout << Solution().findMedianSortedArrays(nums41, nums42) << endl;
     // 2
 
     return 0;

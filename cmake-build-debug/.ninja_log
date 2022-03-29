@@ -1,0 +1,8 @@
+# ninja log v5
+21	433	6691533000304698	CMakeFiles/leetcode.dir/c++/0002-Add-Two-Numbers/main.cpp.obj	9b077ddd0c155421
+3	491	6691533000874838	CMakeFiles/leetcode.dir/c++/0001-Two-Sum/main.cpp.obj	50634b3ff8e4767c
+71	496	6691533000934868	CMakeFiles/leetcode.dir/c++/0005-Longest-Palindromic-Substring/main1.cpp.obj	ec540792b5b7264f
+100	527	6691533001244918	CMakeFiles/leetcode.dir/c++/0007-reverse-Interger/main.cpp.obj	91c4078ce573b585
+61	537	6691533001344943	CMakeFiles/leetcode.dir/c++/0004-Median-Of-Two-Sorted-Arrays/main1.cpp.obj	75eb28b78dbde218
+90	556	6691533001544994	CMakeFiles/leetcode.dir/c++/0006-Z/main.cpp.obj	83f15866d577b74e
+10	624	6691533002215131	CMakeFiles/leetcode.dir/c++/0001-Two-Sum/main1.cpp.obj	cb99e7581f10a338
