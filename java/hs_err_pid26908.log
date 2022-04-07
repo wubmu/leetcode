@@ -1,0 +1,196 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 257949696 bytes for Failed to commit area from 0x000000070a000000 to 0x0000000719600000 of length 257949696.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./src/hotspot/os/windows/os_windows.cpp:3303), pid=26908, tid=25080
+#
+# JRE version:  (11.0.9+11) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.9+11-b1145.21, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\lib\idea_rt.jar=12129:D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\bin -Dfile.encoding=UTF-8 美团.problems_2021.第八场.Main
+
+Host: AMD Ryzen 7 4800H with Radeon Graphics         , 16 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1566)
+Time: Sat Apr  2 10:55:23 2022 中国标准时间 elapsed time: 0.028503 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001af81bad000):  JavaThread "Unknown thread" [_thread_in_vm, id=25080, stack(0x0000007c17900000,0x0000007c17a00000)]
+
+Stack: [0x0000007c17900000,0x0000007c17a00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5ed3ca]
+V  [jvm.dll+0x722725]
+V  [jvm.dll+0x723c7d]
+V  [jvm.dll+0x724333]
+V  [jvm.dll+0x242bd8]
+V  [jvm.dll+0x5ea884]
+V  [jvm.dll+0x5df995]
+V  [jvm.dll+0x2fe13b]
+V  [jvm.dll+0x2fe0aa]
+V  [jvm.dll+0x2fdf82]
+V  [jvm.dll+0x302e56]
+V  [jvm.dll+0x34b583]
+V  [jvm.dll+0x34bc86]
+V  [jvm.dll+0x34b683]
+V  [jvm.dll+0x2d8df8]
+V  [jvm.dll+0x2d9f97]
+V  [jvm.dll+0x701517]
+V  [jvm.dll+0x702d0c]
+V  [jvm.dll+0x358b39]
+V  [jvm.dll+0x6e4f9e]
+V  [jvm.dll+0x3c0db3]
+V  [jvm.dll+0x3c2f61]
+C  [jli.dll+0x5373]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001af800d20e0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001af81bc5800 GCTaskThread "GC Thread#0" [stack: 0x0000007c17a00000,0x0000007c17b00000] [id=3184]
+  0x000001af81c1f000 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000007c17b00000,0x0000007c17c00000] [id=25300]
+  0x000001af81c20800 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000007c17c00000,0x0000007c17d00000] [id=11200]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffdf5949397]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001af81ba8220] Heap_lock - owner thread: 0x000001af81bad000
+
+Heap address: 0x000000070a000000, size: 3936 MB, Compressed Oops mode: Non-zero based: 0x000000070a000000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.023 Loaded shared library D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff6a0230000 - 0x00007ff6a023a000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\java.exe
+0x00007ffe79910000 - 0x00007ffe79b05000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe77af0000 - 0x00007ffe77bae000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffe77060000 - 0x00007ffe77328000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffe77730000 - 0x00007ffe77830000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe56b00000 - 0x00007ffe56b19000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\jli.dll
+0x00007ffe56ae0000 - 0x00007ffe56af7000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\VCRUNTIME140.dll
+0x00007ffe78090000 - 0x00007ffe78230000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffe775a0000 - 0x00007ffe775c2000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffe77ac0000 - 0x00007ffe77aeb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe77490000 - 0x00007ffe7759b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffe65f30000 - 0x00007ffe661ca000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffe77690000 - 0x00007ffe7772d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffe77bb0000 - 0x00007ffe77c4e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffe78e70000 - 0x00007ffe78ea0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffe3e9f0000 - 0x00007ffe3ea8d000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\msvcp140.dll
+0x00007ffdf5660000 - 0x00007ffdf612e000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\server\jvm.dll
+0x00007ffe79320000 - 0x00007ffe793ce000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffe78320000 - 0x00007ffe783bc000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffe77990000 - 0x00007ffe77ab5000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffe78240000 - 0x00007ffe78248000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffe6d100000 - 0x00007ffe6d127000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffe72cf0000 - 0x00007ffe72cf9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffe705e0000 - 0x00007ffe705ea000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffe77c50000 - 0x00007ffe77cbb000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffe758d0000 - 0x00007ffe758e2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffe6a5f0000 - 0x00007ffe6a601000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\verify.dll
+0x00007ffe74c50000 - 0x00007ffe74e34000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffe5ff80000 - 0x00007ffe5ffac000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffe77830000 - 0x00007ffe778b2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffe625c0000 - 0x00007ffe625e9000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\java.dll
+0x00007ffe6e200000 - 0x00007ffe6e20b000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\jimage.dll
+0x00007ffe5a4d0000 - 0x00007ffe5a4df000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\instrument.dll
+0x00007ffe5fe50000 - 0x00007ffe5fe68000 	D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\jbr\bin\server
+
+VM Arguments:
+jvm_args: -javaagent:D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\lib\idea_rt.jar=12129:D:\software\ideaTool\apps\IDEA-U\ch-0\203.5981.155\bin -Dfile.encoding=UTF-8 
+java_command: 美团.problems_2021.第八场.Main
+java_class_path (initial): D:\code\leetcode\java\out\production\leetcode;C:\Users\wyb\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\wyb\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 12                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 13                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 257949696                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4127195136                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 7594288                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122031976                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122031976                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=D:\software\gurobi\win64\bin;D:\software\xftp\;C:\ProgramData\Oracle\Java\javapath;C:\CTeX\LOCALT~1\ty\bin;C:\CTeX\LOCALT~1\cct\bin;D:\software\miktex\miktex\bin\x64\;C:\CTeX\texmf\miktex\bin;C:\CTeX\gs\gs8.51\bin;C:\CTeX\WinEdt;D:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin;D:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v11.1\libnvvp;D:\software\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\software\spss\JRE\bin;D:\software\nodejs\;D:\software\anaconda\envs\tensorflow\Scripts;D:\software\jdk\bin;D:\software\jdk\demo\bin;D:\blogs\bin;D:\software\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\software\Git\cmd;D:\software\matlab\runtime\win64;D:\software\matlab\bin;D:\software\matlab\polyspace\bin;D:\software\Microsoft VS Code\bin;D:\software\anaconda\Scripts;D:\software\anaconda\bin;D:\software\cmder;D:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin;D:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v11.1\lib\Win32;D:\ProgramData\NVIDIA Corporation\CUDASamples\bin;D:\ProgramData\NVIDIA Corporation\CUDASamples\common\lib\x64;D:\software\anaconda\envs\tensorflow\Scripts;C:\Users\wyb\AppData\Local\Microsoft\WindowsApps;D:\software\Graphviz\bin;C:\Users\wyb\AppData\Roaming\npm;C:\Users\wyb\AppData\Local\Microsoft\WindowsApps;D:\software\gradle-7.2-all\gradle-7.2\bin;D:\software\mysql-5.6.40-winx64\bin;D:\software\CodeBlocks\MinGW\bin;;D:\software\Fiddler
+USERNAME=wyb
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.1566)
+OS uptime: 1 days 1:37 hours
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 2 threads per core) family 23 model 96 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx, sha, fma
+
+Memory: 4k page, system-wide physical 15741M (3360M free)
+TotalPageFile size 19875M (AvailPageFile size 58M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 71M, peak: 317M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.9+11-b1145.21) for windows-amd64 JRE (11.0.9+11-b1145.21), built on Nov 21 2020 14:37:09 by "" with MS VC++ 14.0 (VS2015)
+
+END.

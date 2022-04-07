@@ -1,0 +1,15 @@
+
+P
+java:S1854"5Remove this useless assignment to local variable "n".(“ú×Øÿÿÿÿÿ
+Y
+java:S1659	">Declare "r" and all following declarations on a separate line.(¨¶Ìşÿÿÿÿ
+7
+java:S1659"!Declare "str" on a separate line.(İš¦¡
+A
+java:S1481	"&Remove this unused "n" local variable.(¨¶Ìşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ìÑÑÈÿÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(¤äé¶üÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ÙùçÈüÿÿÿÿ
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8„ñíÂş/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µÜÏ”ûÿÿÿÿ

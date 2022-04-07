@@ -1,0 +1,68 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "Launch Main2",
+        "request": "launch",
+        "mainClass": "腾讯.腾讯音乐2021.Main2",
+        "projectName": "公司题库_94115398"
+      },
+      {
+        "type": "java",
+        "name": "Launch demo2",
+        "request": "launch",
+        "mainClass": "demo2",
+        "projectName": "leetcode_787e2dde"
+      },
+      {
+        "type": "java",
+        "name": "Launch Main",
+        "request": "launch",
+        "mainClass": "Main",
+        "projectName": "leetcode_787e2dde"
+      },
+      {
+        "type": "java",
+        "name": "Launch App",
+        "request": "launch",
+        "mainClass": "App",
+        "projectName": "leetcode_787e2dde"
+      },
+      {
+        "type": "java",
+        "name": "Debug (Launch) - Current File",
+        "request": "launch",
+        "mainClass": "${file}"
+      },
+      {
+        "name": "gcc.exe - 生成和调试活动文件",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "args": [
+          "/C",
+          "${fileDirname}\\${fileBasenameNoExtension}.exe",
+          "&",
+          "pause"
+        ],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "miDebuggerPath": "D:\\software\\CodeBlocks\\MinGW\\bin\\gdb.exe",
+        "setupCommands": [
+          {
+            "description": "为 gdb 启用整齐打印",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "gcc.exe build active file"
+      }
+    ]
+   }

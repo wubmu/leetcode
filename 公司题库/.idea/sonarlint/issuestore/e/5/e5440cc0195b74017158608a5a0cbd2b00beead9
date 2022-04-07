@@ -1,0 +1,15 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(¢°ÉÃşÿÿÿÿ
+F
+java:S5413&")Verify that "remove()" is used correctly.(ôêÍ8Çßú €0
+S	java:S106."9Replace this use of System.out or System.err by a logger.(¸šñÙüÿÿÿÿ
+m	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+e
+java:S1104"OMake res a static final constant or non-public and provide accessors if needed.(ØıÂÕ
+?
+java:S1444")Make this "public static res" field final(ØıÂÕ
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(¢ßò´úÿÿÿÿ
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(÷¸õùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰øã
