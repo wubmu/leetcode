@@ -1,4 +1,4 @@
-package 腾讯.腾讯音乐2022;
+package problem_2022.腾讯.腾讯音乐2022;
 
 import java.util.ArrayList;
 import java.util.List;

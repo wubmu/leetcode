@@ -1,4 +1,4 @@
-package 腾讯;
+package problem_2022.腾讯;
 
 import java.io.BufferedReader;
 import java.io.IOException;

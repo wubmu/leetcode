@@ -1,6 +1,4 @@
-package 腾讯.腾讯音乐2021;
-
-import java.io.BufferedReader;
+package problem_2022.腾讯.腾讯音乐2021;
 
 import java.io.*;
 import java.util.*;

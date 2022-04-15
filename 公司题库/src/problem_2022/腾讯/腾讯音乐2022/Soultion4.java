@@ -1,4 +1,4 @@
-package 腾讯.腾讯音乐2022;
+package problem_2022.腾讯.腾讯音乐2022;
 
 public class Soultion4 {
     public int dfs(char pr, int num, int depth , int n, int k ,int account){
@@ -13,6 +13,6 @@ public class Soultion4 {
 
         int sum = 0 ;
         
-
+        return 0;
     }
 }
