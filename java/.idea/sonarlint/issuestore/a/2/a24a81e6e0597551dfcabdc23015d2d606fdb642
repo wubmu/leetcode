@@ -1,7 +1,7 @@
 
 Q
 java:S1854"6Remove this useless assignment to local variable "sc".(ğÛ²¸øÿÿÿÿ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(­ –8ƒËÕ÷ı/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(­ –
 B
 java:S1481"'Remove this unused "sc" local variable.(ğÛ²¸øÿÿÿÿ
 V	java:S125 "<This block of commented-out lines of code should be removed.(¢†áÆúÿÿÿÿ
