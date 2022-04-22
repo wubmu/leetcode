@@ -58,7 +58,7 @@
 0-1背包
 
 - 416 [分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/description/)：是否能组成总容量的一半
-- [474. 一和零](https://leetcode-cn.com/problems/ones-and-zeroes/)
+- [474. 一和零](https://leetcode-cn.com/problems/ones-and-zeroes/)：（多背包问题）
 - [494. 目标和](https://leetcode-cn.com/problems/target-sum/)
 - [1049. 最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/)
 
