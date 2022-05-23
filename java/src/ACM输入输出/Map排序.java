@@ -13,8 +13,8 @@ public class Map排序 {
                 return t1.compareTo(integer);
             }
         });
-        map.put(3,2);
-        map.put(2,3);
+        map.put(2,2);
+        map.put(3,3);
         map.put(1,4);
 
 

@@ -1,6 +1,0 @@
-
-M
-java:S1172"2Remove these unused method parameters "pr", "num".(ş±ù™şÿÿÿÿ
-C
-java:S1481"(Remove this unused "sum" local variable.(©ŒºÉûÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰øã

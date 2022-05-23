@@ -48,6 +48,5 @@ int main() {
     vector<int> nums = {2,5,5,11};
     int target = 10;
     print_vec(Solution().twoSum(nums, target));
-
     return 0;
 }

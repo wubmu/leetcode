@@ -42,6 +42,15 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
+    "editor.minimap.enabled": true,
+    "C_Cpp.autocomplete": "Default",
+    "[cpp]": {
+        "editor.quickSuggestions": true
+    },
+    "[c]": {
+        "editor.quickSuggestions": true
+    }
+,
 //关于在CodeRunner中乱码问题的解决：
 //确保VScode其默认编码格式为utf8，如下所示
 //况且OUTPUT默认也为utf8,因此可以正常显示中文
