@@ -53,9 +53,10 @@ public class Solution{
         //求出两个节点的最近公共祖先
         TreeNode ancestor=lowestCommonAncestor(root,node1,node2);
         //分别求出公共祖先到两个节点的路经长
-        int l1=getPath(ancestor,node1,pathList1);
-        int l2=getPath(ancestor,node2,pathList2);
-        return (l1+l2);
+//        int l1=getPath(ancestor,node1,pathList1);
+//        int l2=getPath(ancestor,node2,pathList2);
+//        return (l1+l2);
+    return 0;
     }
 
     public static void main(String[] args) {

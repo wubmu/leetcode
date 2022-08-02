@@ -1,5 +1,6 @@
 package ACM输入输出;
 
+
 import org.junit.Test;
 
 import java.util.*;
@@ -26,7 +27,7 @@ public class Map排序 {
         }
     }
 
-    @Test
+
     public void useCompare(){
         List<Integer> list1 = Arrays.asList(5, 3, 2, 4, 1);
         Collections.sort(list1);
@@ -47,7 +48,7 @@ public class Map排序 {
         System.out.println("倒序：" + list2);
     }
 
-    @Test
+
     public void useMapCompare(){
 
         // 按照key 升降排序
