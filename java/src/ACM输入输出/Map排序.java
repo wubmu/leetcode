@@ -91,4 +91,28 @@ public class Map排序 {
             System.out.println(mapping.getKey()+":"+mapping.getValue());
         }
     }
+
+
+    /*
+    多条件排序
+     */
+    @Test
+    public void testMulit(){
+        int[][] list = new int[][]{{5,4},{1,3},{1,2}, {1,4}};
+        // 1. 降序， 2升序  1,2
+//        Arrays.sort(list,(o1,o2)-> o1[0]==o2[0]? o1[1]-o2[1] : o2[0] - o1[0] );
+        // list 用 collections
+        Arrays.sort(list, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if (o1[0]==o2[0])
+                    return o1[1] - o2[1];
+                else
+                    return o2[0] - o2[1];
+            }
+        });
+
+        for(int[] out : list)
+            System.out.println(Arrays.toString(out));
+    }
 }

@@ -75,7 +75,7 @@ public int jump(int[] nums){
     int ans = 0;            // 记录走的最大步数
     int nextDistance = 0;   // 下一步覆盖最远距离下标
 
-    for (int i = 0; i < nums.length-1; i++) {
+    for (int i = 0; i < nums.length-1; i++) { // 注意这里是小于nums.size() - 1，这是关键所在
         nextDistance = nums[i] + i > nextDistance?nums[i] + i:nextDistance;
         if (i == curDistance) {
             curDistance = nextDistance;
