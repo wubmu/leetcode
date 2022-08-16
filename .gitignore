@@ -2,3 +2,6 @@
 *.idea
 java\.idea\*
 *log
+/.vscode/
+/.idea/
+/cmake-build-debug/

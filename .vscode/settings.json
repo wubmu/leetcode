@@ -45,10 +45,18 @@
     "editor.minimap.enabled": true,
     "C_Cpp.autocomplete": "Default",
     "[cpp]": {
-        "editor.quickSuggestions": true
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
     },
     "[c]": {
-        "editor.quickSuggestions": true
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
     }
 ,
 //关于在CodeRunner中乱码问题的解决：
