@@ -30,9 +30,7 @@ public class UF {
 
     // 判断节点 p 和节点 q 是否连通
     public boolean connected(int p, int q) {
-        int rootP = find(p);
-        int rootQ = find(q);
-        return rootP == rootQ;
+        return find(p)==find(q);
     }
 
     public int find(int x) {

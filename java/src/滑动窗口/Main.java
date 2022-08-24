@@ -1,2 +1,4 @@
-package 滑动窗口;public class Main {
+package 滑动窗口;
+
+public class Main {
 }
