@@ -75,26 +75,25 @@ class Solution {
         // 预处理
         t = " " +t; //开头加一个空格作为匹配的入口
         int n = t.length();
-        int [][] dp = new int[n][26];
-
-        for(int ch = 0 ; ch<26 ; ch++){
+        int[][] dp = new int[n][26]; // 下一个位置出现ch的位置
+        for (int ch = 0; ch < 26; ch++) {
             int p = -1;
-            for(int j = n -1; j >=0 ; j--){ // 从后往前记录
-                dp[j][ch] = p;
-                if(t.charAt(j) == ch+'a')
-                    p = j;
+
+            for (int i = n-1; i  >=0; i--) {
+                dp[i][ch] = p;
+                if(t.charAt(i) == ch+'a') p = i;
             }
         }
 
+        // 开始匹配
+        int i = 0;
+        for (char ch : s.toCharArray()) {
+            i = dp[i][ch-'a'];
+            if(i == -1) return false;
+        }
 
-    // 匹配
-    int i = 0;
-    for(char ch : s.toCharArray()){
-        i = dp[i][ch -'a'];
-        if(i == -1) return false;
-    }
+        return true;
 
-    return true;
     }
 
 

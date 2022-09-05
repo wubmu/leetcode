@@ -37,24 +37,44 @@ class Solution {
      * @param nums
      * @return
      */
+    // public int lengthOfLIS(int[] nums) {
+    //     int[] tails =  new int[nums.length];
+    //     int res = 0;
+    //     for (int num : nums) {
+    //         int l = 0 , r = res;
+    //         // 二分查找找到可插入的位置
+    //         //[left, right)
+
+    //         while(l < r){
+    //             int mid = (l+r) >> 1;
+    //             if(nums[mid] < num){
+
+    //                 r = mid;
+    //             }else if(nums[mid] > num)
+    //                 l = mid +1;
+    //         }
+    //     }
+    // }
+
+
     public int lengthOfLIS(int[] nums) {
-        int[] tails =  new int[nums.length];
+        int[] tail = new int[nums.length];
         int res = 0;
-        for (int num : nums) {
-            int l = 0 , r = res;
-            // 二分查找找到可插入的位置
-            //[left, right)
-
-            while(l < r){
-                int mid = (l+r) >> 1;
-                if(nums[mid] < num){
-
-                    r = mid;
-                }else if(nums[mid] > num)
-                    l = mid +1;
+        for (int x : nums) {
+            int left = 0, right = res;
+            while(left < right){
+                int mid = left + (right - left)/2;
+                if(tail[mid] < x) left = mid+1;
+                else right = mid;
             }
+            // 没找到合适的
+            tail[left] = x;
+            if(res == right) res++;
         }
+
+        return res;
     }
+
 }
 // @lc code=end
 
