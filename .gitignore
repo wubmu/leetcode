@@ -5,3 +5,5 @@ java\.idea\*
 /.vscode/
 /.idea/
 /cmake-build-debug/
+
+output/
